@@ -48,7 +48,7 @@ h2 {
 canvas#particle-js {
     background-color: white !important;
     /* important */
-    position: absolute !important;
+    position: relative !important;
     width: auto !important;
     height: auto !important; 
     /* depending on where you want this canvas, you can use left/right/top and bottom properties */
