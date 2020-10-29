@@ -43,6 +43,7 @@ h2 {
 #main {
     text-align: center;
     margin-top: 6%;
+    z-index: 1;
 }
 
 canvas#particle-js {
@@ -54,4 +55,8 @@ canvas#particle-js {
     /* depending on where you want this canvas, you can use left/right/top and bottom properties */
     left: 0;
     top: 0; 
+    z-index: 0;
 }
+
+
+/*  
