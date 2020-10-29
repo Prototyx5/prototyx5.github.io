@@ -52,7 +52,7 @@ h2 {
     z-index: 1;
 }
 
-#particles-js canvas {
+canvas#particles-js  {
     display: block;
 /*   vertical-align: bottom; */
     -webkit-transform: scale(1);
