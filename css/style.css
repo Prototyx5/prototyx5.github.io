@@ -13,7 +13,7 @@ button {
     outline: none;
     border: none;
     color: white;
-    font-size: 30px;
+    font-size: 25px;
     font-family: 'Roboto Mono', monospace;
     border-bottom: solid;
     border-width: 1px;
@@ -28,6 +28,11 @@ p {
 
 button:hover {
     border-color: white;
+}
+
+h12 {
+    font-family: 'Roboto';
+    font-size: 60px;
 }
 
 h2 {
