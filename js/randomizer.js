@@ -16,8 +16,7 @@ var test = [
 
 choose = function() {
     for(let i = 0; i < 7; i++) {
-        var randomtest = Math.floor(Math.random()*test.length);
-        var change = document.getElementById("id0" + i);
-        change.innerHTML = test[randomtest];
+        var change = document.getElementById("settings0" + i);
+        change.innerHTML = test[Math.floor(Math.random()*test.length)];
     }
 }
