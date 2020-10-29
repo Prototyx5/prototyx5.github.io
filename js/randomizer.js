@@ -1,11 +1,23 @@
 var test = [
     "1",
-    "2"
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12"
 ];
 
 
 choose = function() {
     var randomtest = Math.floor(Math.random()*test.length);
-    var change = document.getElementById("id01");
-    change.innerHTML = test[randomtest];
+    for(let i = 0; i < 6; i++) {
+        var change = document.getElementById("id0" + i);
+        change.innerHTML = test[randomtest];
+    }
 }
