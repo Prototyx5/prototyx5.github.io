@@ -1,3 +1,13 @@
+@font-face {
+    font-family: InYourFace;
+    src: url('in_your_face.ttf');
+}
+
+@font-face {
+    font-family: VCR;
+    src: url('vcr.ttf');
+}
+
 body {
     background: rgb(1,6,27);
     background: linear-gradient(90deg, rgb(0, 3, 14) 0%, rgba(0,0,0,1) 100%);
@@ -30,8 +40,8 @@ button:hover {
     border-color: white;
 }
 
-h12 {
-    font-family: 'Roboto';
+h1 {
+    font-family: 'InYourFace';
     font-size: 60px;
 }
 
