@@ -43,6 +43,9 @@ h2 {
 #main {
     text-align: center;
     margin-top: 6%;
+    position: absolute !important;
+    width: auto !important;
+    height: auto !important; 
     z-index: 1;
 }
 
