@@ -55,3 +55,10 @@ canvas#particle-js {
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
+
+.test{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
