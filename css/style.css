@@ -14,10 +14,6 @@ body {
     color: white;
 }
 
-img {
-    height: 300px;
-}
-
 button {
     background-color: transparent;
     outline: none;
@@ -58,7 +54,7 @@ h2 {
 
 #particles-js canvas {
     display: block;
-/*    vertical-align: bottom; */
+/*   vertical-align: bottom; */
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
