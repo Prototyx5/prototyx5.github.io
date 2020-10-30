@@ -30,7 +30,7 @@ var SettingsText = ["Confirm Ejects: ", "# Emergency Meetings: ", "Emergency Coo
 
 var selector = [ConfirmEjects,EmergencyMeetings,EmergencyCooldown,DiscussionTime,VotingTime,PlayerSpeed,CrewmateVision,ImpostorVision,KillCooldown,KillDistance,VisualTasks,CommonTasks,LongTasks,ShortTasks]
 choose = function () {
- for (let i = 0; i < 15; i++) {
+ for (let i = 0; i < 14; i++) {
      var element = document.getElementById('settings0' + i)
      element.innerHTML = SettingsText[i] + selector[i][Math.floor(Math.random() * selector[i].length)]
  }
