@@ -47,7 +47,7 @@ var ee = [ConfirmEjects,EmergencyMeetings,EmergencyCooldown,DiscussionTime,Votin
 choose = function () {
  for (let i = 0; i < 15; i++) {
      var element = document.getElementById('settings0' + i)
-     element.innerHTML = ee[i][Math.floor(Math.random() * ee[i].length)]
+     element.innerHTML = SettingsText[i] + ee[i][Math.floor(Math.random() * ee[i].length)]
  }
 }
 
