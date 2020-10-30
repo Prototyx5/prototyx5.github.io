@@ -20,7 +20,7 @@ button {
     border: none;
     color: white;
     font-size: 25px;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'VCR';
     border-bottom: solid;
     border-width: 1px;
     border-color: transparent;
@@ -43,7 +43,7 @@ h1 {
 
 h2 {
     font-family: 'VCR';
-    font-size: 10px;
+    font-size: 15px;
 }
 
 #main {
