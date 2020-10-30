@@ -26,32 +26,12 @@ var LongTasks = ['0', '1', '2', '3']
 
 var ShortTasks = ['0', '1', '2', '3', '4', '5']
 
-var SettingsText = [
-    "Confirm Ejects: ",
-    '# Emergency Meetings: ',
-    "Emergency Cooldown: ",
-    'Discussion Time: ',
-    "Voting Time: ",
-    'Player Speed: ',
-    "Crewmate Vision: ",
-    'Impostor Vision: ',
-    "Kill Cooldown: ",
-    'Kill Distance: ',
-    "Visual Task: ",
-    '# Common Tasks: ',
-    "# Long Tasks: ",
-    '# Short Tasks: '
-]
+var SettingsText = ["Confirm Ejects: ", "# Emergency Meetings: ", "Emergency Cooldown: ", "Discussion Time: ", "Voting Time: ", "Player Speed: ", "Crewmate Vision: ", "Impostor Vision: ", "Kill Cooldown: ", "Kill Distance: ", "Visual Task: ", "# Common Tasks: ", "# Long Tasks: ", "# Short Tasks: "]
 
-var ee = [ConfirmEjects,EmergencyMeetings,EmergencyCooldown,DiscussionTime,VotingTime,PlayerSpeed,CrewmateVision,ImpostorVision,KillCooldown,KillDistance,VisualTasks,CommonTasks,LongTasks,ShortTasks]
+var varselector = [ConfirmEjects,EmergencyMeetings,EmergencyCooldown,DiscussionTime,VotingTime,PlayerSpeed,CrewmateVision,ImpostorVision,KillCooldown,KillDistance,VisualTasks,CommonTasks,LongTasks,ShortTasks]
 choose = function () {
  for (let i = 0; i < 15; i++) {
      var element = document.getElementById('settings0' + i)
-     element.innerHTML = SettingsText[i] + ee[i][Math.floor(Math.random() * ee[i].length)]
+     element.innerHTML = SettingsText[i] + varselector[i][Math.floor(Math.random() * varselector[i].length)]
  }
 }
-
-/*for (let i = 0; i < 7; i++) {
-    var change = document.getElementById('settings0' + i)
-    change.innerHTML = test[Math.floor(Math.random() * test.length)]
-  }*/
