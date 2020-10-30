@@ -46,6 +46,11 @@ h2 {
     font-size: 18px;
 }
 
+h3 {
+    font-family: 'VCR';
+    font-size: 10px;
+}
+
 #main {
     text-align: center;
     margin-top: 6%;
