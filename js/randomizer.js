@@ -35,7 +35,12 @@ choose = function () {
      var randomized = Math.floor(Math.random() * selector[i].length)
      var element = document.getElementById('settings0' + i)
      element.innerHTML = SettingsText[i] + selector[i][randomized]
-     identifier += "," + randomized
+     if (identifier = "") {
+        identifier += randomized
+     } else {
+        identifier += "," + randomized
+     }
+
     }
     window.location.hash = identifier
 }
