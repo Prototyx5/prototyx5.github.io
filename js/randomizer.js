@@ -40,7 +40,6 @@ choose = function () {
      } else {
         identifier += "," + randomized
      }
-
     }
     window.location.hash = identifier
 }
