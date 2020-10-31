@@ -30,11 +30,14 @@ var SettingsText = ["Confirm Ejects: ", "# Emergency Meetings: ", "Emergency Coo
 
 var selector = [ConfirmEjects,EmergencyMeetings,EmergencyCooldown,DiscussionTime,VotingTime,PlayerSpeed,CrewmateVision,ImpostorVision,KillCooldown,KillDistance,VisualTasks,CommonTasks,LongTasks,ShortTasks]
 choose = function () {
+    var identifier = ""
  for (let i = 0; i < 14; i++) {
+     var randomized = Math.floor(Math.random() * selector[i].length)
      var element = document.getElementById('settings0' + i)
-     element.innerHTML = SettingsText[i] + selector[i][Math.floor(Math.random() * selector[i].length)]
-     window.location.hash = "test"
- }
+     element.innerHTML = SettingsText[i] + selector[i][randomized]
+     identifier += randomized
+    }
+    window.location.hash = identifier
 }
 
 //    if(window.location.hash) {
