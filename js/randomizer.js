@@ -56,3 +56,13 @@ init = function () {
     }
 }
 
+window.onhashchange = function() { 
+    if(window.location.hash) {
+        var hash = window.location.hash.substring(1).split(","); //Puts hash in variable, and removes the # character
+        for (let i = 0; i < hash.length; i++) {
+            var element = document.getElementById('settings0' + i)
+            element.innerHTML = SettingsText[i] + selector[i][hash[i]]
+        }
+    }
+}
+
