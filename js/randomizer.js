@@ -68,7 +68,7 @@ window.onhashchange = function() {
     }
 }
 
-output = function() {
+DataSelector = function() {
 
     for (let i = 0; i < 14; i++) {
      var randomized = Math.floor(Math.random() * selector[i].length)
