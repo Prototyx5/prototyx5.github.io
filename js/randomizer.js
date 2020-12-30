@@ -74,5 +74,5 @@ DataSelector = function() {
      var randomized = Math.floor(Math.random() * selector[i].length)
      Output[i] = selector[i][randomized]
     }
-
+return Output;
 }
