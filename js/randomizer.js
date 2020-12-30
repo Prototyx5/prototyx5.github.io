@@ -1,4 +1,4 @@
-var Output
+var Output = [""]
 
 var ConfirmEjects = ['ON', 'OFF']
 
