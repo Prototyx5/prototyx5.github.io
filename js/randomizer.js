@@ -1,3 +1,5 @@
+var Output
+
 var ConfirmEjects = ['ON', 'OFF']
 
 var EmergencyMeetings = ['1', '2', '3', '4', '5', '6', '7', '8', '9']
@@ -66,3 +68,11 @@ window.onhashchange = function() {
     }
 }
 
+output = function() {
+
+    for (let i = 0; i < 14; i++) {
+     var randomized = Math.floor(Math.random() * selector[i].length)
+     Output[i] = selector[i][randomized]
+    }
+
+}
