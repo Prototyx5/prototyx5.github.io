@@ -38,7 +38,7 @@ var selector = [ConfirmEjects,EmergencyMeetings,EmergencyCooldown,DiscussionTime
 
 choose = function () {
     var identifier = ""
- for (let i = 0; i < selector.length; i++) {
+ for (let i = 0; i < selector.length + 1; i++) {
      var randomized = Math.floor(Math.random() * selector[i].length)
      var element = document.getElementById('settings0' + i)
      element.innerHTML = SettingsText[i] + selector[i][randomized]
