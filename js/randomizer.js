@@ -22,7 +22,7 @@ var KillCooldown = ['10,0s', '12,5s', '15,0s', '17,5s', '20,0s', '22,5s', '25,0s
 
 var KillDistance = ['Short', 'Medium', 'Long']
 
-var TaskBarUpdates = ["Always" , "Meetings" , "Never"]
+var TaskBarUpdates = ['Always' , 'Meetings' , 'Never']
 
 var VisualTasks = ['ON', 'OFF']
 
@@ -32,13 +32,13 @@ var LongTasks = ['0', '1', '2', '3']
 
 var ShortTasks = ['0', '1', '2', '3', '4', '5']
 
-var SettingsText = ["Confirm Ejects: ", "# Emergency Meetings: ", "Emergency Cooldown: ", "Discussion Time: ", "Voting Time: ", "Player Speed: ", "Crewmate Vision: ", "Impostor Vision: ", "Kill Cooldown: ", "Kill Distance: ", "Visual Task: ", "# Common Tasks: ", "# Long Tasks: ", "# Short Tasks: "]
+var SettingsText = ["Confirm Ejects: ", "# Emergency Meetings: ", "Emergency Cooldown: ", "Discussion Time: ", "Voting Time: ","Anonymous Votes: ", "Player Speed: ", "Crewmate Vision: ", "Impostor Vision: ", "Kill Cooldown: ", "Kill Distance: ","Task Bar Updates: ", "Visual Task: ", "# Common Tasks: ", "# Long Tasks: ", "# Short Tasks: "]
 
 var selector = [ConfirmEjects,EmergencyMeetings,EmergencyCooldown,DiscussionTime,VotingTime,AnonymousVotes,PlayerSpeed,CrewmateVision,ImpostorVision,KillCooldown,KillDistance,TaskBarUpdates,VisualTasks,CommonTasks,LongTasks,ShortTasks]
 
 choose = function () {
     var identifier = ""
- for (let i = 0; i < selector.length; i++) {
+ for (let i = 0; i < selector.length -1; i++) {
      var randomized = Math.floor(Math.random() * selector[i].length)
      var element = document.getElementById('settings0' + i)
      element.innerHTML = SettingsText[i] + selector[i][randomized]
