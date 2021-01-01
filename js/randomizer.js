@@ -43,7 +43,7 @@ choose = function () {
      var element = document.getElementById('settings0' + i)
      element.innerHTML = SettingsText[i] + selector[i][randomized]
      console.log(SettingsText[i] + selector[i][randomized])
-     if (identifier == "") {
+     if (identifier == "" || identifier == null) {
         identifier += randomized
      } else {
         identifier += "," + randomized
