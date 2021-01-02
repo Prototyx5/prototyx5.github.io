@@ -56,7 +56,7 @@ init = function () {
     if(window.location.hash) {
         var hash = window.location.hash.substring(1).split(","); //Puts hash in variable, and removes the # character
         for (let i = 0; i < hash.length; i++) {
-            if (hash.length > selector.length) {
+            if (hash.length > selector.length || hash.length < selector.length) {
                 console.error("Invalid identifier in URL, please check.")
                 break;
             }
@@ -72,7 +72,7 @@ window.onhashchange = function() {
     if(window.location.hash) {
         var hash = window.location.hash.substring(1).split(","); //Puts hash in variable, and removes the # character
         for (let i = 0; i < hash.length; i++) {
-            if (hash.length > selector.length) {
+            if (hash.length > selector.length || hash.length < selector.length) {
                 console.error("Invalid identifier in URL, please check.")
                 break;
             }
